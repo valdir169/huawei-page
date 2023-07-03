@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faTimes, faBars, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../public/image/huawei_logo.png'
 import './menu.css'
 import { useState } from 'react'
@@ -28,6 +28,8 @@ export function Menu() {
             </div>
 
             <div className='menu-icon' onClick={toggleMenu}>
+                <FontAwesomeIcon icon={faSearch } className='bar-icon'/>
+                <FontAwesomeIcon icon={faUser} className='bar-icon'/>
                 <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className='bar-icon'/>
             </div>
         </nav>

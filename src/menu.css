@@ -40,8 +40,9 @@
 }
 
 .menu-icon {
-    display: block;
+    display: flex;
     cursor: pointer;
+    gap: 1.5rem;
 }
 
 .menu-links.open {
