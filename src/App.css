@@ -42,6 +42,8 @@
 
 
 .App {
-  padding: 0 60px;
-  background: rgb(236, 236, 236);
+  padding: 67px 0 60px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

@@ -1,0 +1,38 @@
+.sliderDos {
+    display: flex;
+    align-items: flex-start;
+    height: 60vh;
+    border-radius: 30px;
+    background: white;
+}
+
+.sliderDos-image {
+    width: 45%; 
+    height: 100%;
+}
+
+.sliderDos-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0px 0px 30px ;
+}
+
+.sliderDos-container {
+    height: 100%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.sliderDos-header {
+    font-size: 58px;
+    color: black;
+    letter-spacing: 1;
+}
+
+.sliderDos-container p{
+    color: black;
+}
+
+.sliderDos-container strong {
+    color: black;
+}
