@@ -9,7 +9,7 @@ export default function App() {
     <div className='App'>
       <Slider />
       <SliderDos />
-      <Products products={products} />
+      {/* <Products products={products} /> */}
     </div>
   )
 }
