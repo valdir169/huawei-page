@@ -1,11 +1,14 @@
-import  './slider.css'
+import { Button } from './Button.jsx'
+import './slider.css'
 
 export function Slider() {
     return (
         <div className="slider">
-            
+
             <div className="slider-image">
-                <img src="https://informeaereo.com/wp-content/uploads/2023/01/HUAWEI-nova-Y90.webp" alt="" />
+                <div>
+                    <img src="https://consumer.huawei.com/content/dam/huawei-cbg-site/latam/pe/mkt/homepage/new-homepage/phones/nova-y91.png" alt="" />
+                </div>
             </div>
 
             <div className="slider-container">
@@ -13,7 +16,7 @@ export function Slider() {
                 <strong>Visión extraordinaria</strong>
 
                 <div className='slider-button'>
-                    <button className='button-know-more'>Conoce más</button>
+                    <Button text="Hola" />
                     <button className='slider-buy'>Comprar</button>
                 </div>
             </div>

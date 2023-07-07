@@ -13,7 +13,7 @@ export function Menu() {
     }
 
     return (
-        <nav className="menu">
+        <nav className={`menu ${isOpen ? 'open' : ''}`}>
             <div className="menu-logo">
                 <a href="#">
                     <img className='menu-logo-icon' src={logo} alt="Huawei logo" />
@@ -27,11 +27,11 @@ export function Menu() {
                 <a href="">Contactos</a>
             </div>
 
-            <div className='menu-icon' onClick={toggleMenu}>
+            <div className='menu-icon' >
                 <FontAwesomeIcon icon={faSearch } className='bar-icon'/>
                 <FontAwesomeIcon icon={faUser} className='bar-icon'/>
-                <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className='bar-icon'/>
+                <FontAwesomeIcon onClick={toggleMenu} icon={isOpen ? faTimes : faBars} className='bar-icon'/>
             </div>
         </nav>
     )
-}
+}   

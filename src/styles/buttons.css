@@ -1,0 +1,7 @@
+.button {
+    outline: none;
+    border: none;
+    background: black;
+    padding: 10px 20px;
+    color: white;
+}
