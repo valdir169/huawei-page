@@ -1,9 +1,10 @@
 .sliderDos {
     display: flex;
     align-items: flex-start;
-    height: 60vh;
+    height: 70vh;
     border-radius: 30px;
     backdrop-filter: blur(5px);
+    background: white;
 }
 
 .sliderDos-image {

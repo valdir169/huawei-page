@@ -1,3 +1,4 @@
+import {Button} from './Button'
 import './sliderDos.css'
 
 export function SliderDos() {
@@ -13,8 +14,7 @@ export function SliderDos() {
                 <strong>Desde $ - 550</strong>
 
                 <div className="sliderDos-button">
-                    <button>Conoce Más</button>
-                    <button>Comprar</button>
+                    <Button text="Conoce más" className="button-black"/>
                 </div>
             </div>
         </div>

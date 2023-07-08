@@ -1,11 +1,12 @@
 import '../styles/buttons.css'
 
-export function Button({ text }) {
+export function Button({ text, className }) {
+
     return (
         <>
-            <button className="button">
+            <a className={className}>
                 {text}
-            </button>
+            </a>
         </>
     )
 }

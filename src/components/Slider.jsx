@@ -16,8 +16,8 @@ export function Slider() {
                 <strong>Visión extraordinaria</strong>
 
                 <div className='slider-button'>
-                    <Button text="Hola" />
-                    <button className='slider-buy'>Comprar</button>
+                    <Button text="Conoce más" className="button-black" />
+                    <Button text="Comprar"  className="button-white"/>
                 </div>
             </div>
         </div>
