@@ -4,9 +4,9 @@ export function Button({ text, className }) {
 
     return (
         <>
-            <a className={className}>
+            <button className={className}>
                 {text}
-            </a>
+            </button>
         </>
     )
 }

@@ -3,38 +3,110 @@
     align-items: flex-start;
     height: 70vh;
     border-radius: 30px;
-    backdrop-filter: blur(5px);
     background: white;
+    flex-direction: row;
+
+    @media screen and (max-width:768px) {
+        position: relative;
+        backdrop-filter: blur(10px);
+        align-items: center;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+}
+
+.sliderDos-reverse {
+    flex-direction: row-reverse;
+}
+
+.sliderDos-reverse .sliderDos-image img {
+    border-radius: 0px 30px 30px 0px;
 }
 
 .sliderDos-image {
-    width: 45%; 
+    width: 80%;
     height: 100%;
 }
 
 .sliderDos-image img {
-    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
     height: 100%;
-    border-radius: 30px 0px 0px 30px ;
+    border-radius: 30px 0px 0px 30px;
+    object-fit: fill;
+
+    @media screen and (max-width:768px) {
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
 }
 
 .sliderDos-container {
+    /* width: 60%; */
     height: 100%;
     text-align: left;
-    padding-left: 100px;
-    backdrop-filter: blur(5px);
+    /* padding-left: 100px; */
+
+    @media screen and (max-width:768px) {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        backdrop-filter: blur(30px);
+        padding: 0;
+        padding: 40px;
+        margin: auto;
+        transition: all .7s;
+        padding-left: 0;
+        padding: 30px;
+
+    }
+
+    @media screen and (min-width:968px) {
+        padding-left: 100px;
+        padding-top: 40px;
+    }
+}
+
+.sliderDos:hover .sliderDos-container {
+    top: 0;
 }
 
 .sliderDos-header {
-    font-size: 58px;
+    padding: 40px 0;
+    font-size: 2.25rem;
     color: black;
     letter-spacing: 1;
+
+    @media screen and (max-width:768px) {
+        text-align: center;
+    }
 }
 
-.sliderDos-container p{
+.sliderDos-container p {
     color: black;
+    font-size: 20px;
+    padding: 10px 15px 0 0;
+
+    @media screen and (max-width:768px) {
+        padding: 0;
+    }
 }
 
 .sliderDos-container strong {
     color: black;
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.sliderDos-button {
+    margin-top: 40px;
+    display: flex;
+    gap: 2rem;
+
+    @media screen and (max-width:768px) {
+        justify-content: center;
+    }
 }

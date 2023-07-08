@@ -35,33 +35,22 @@
 }
 
 .slider-header {
-    font-size: 56px;
+    font-size: 3rem;
+    text-align: left;
     font-weight: bold;
     color: #000;
+    padding: 50px 0px 0px 0px;
 }
 
 .slider-container strong {
     color: black;
     font-weight: 500;
     font-size: 36px;
+    padding: 20px 0;
 }
-
-
 
 .slider-button {
     display: flex;
     gap: 2rem;
-    margin-top: 20px;
-}
-
-.button-know-more {
-    background-color: #4EA3F3;
-    color: white;
-    font-weight: 400;
-}
-
-.slider-buy {
-    background-color: white;
-    color: black;
-    font-weight: 100;
+    margin-top: 30px;
 }

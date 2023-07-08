@@ -1,12 +1,13 @@
 .menu {
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(235, 232, 232);
     padding: 10px 50px;
     z-index: 1000;
-    width: calc(100% - 100px);
+    width: 100%;
 }
 
 .menu.open {
@@ -70,10 +71,6 @@ body.menu-open {
 }
 
 @media screen and (max-width: 768px) {
-    .menu {
-        padding: 10px 30px;
-    }
-
     .bar-icon-menu {
         display: block;
     }
